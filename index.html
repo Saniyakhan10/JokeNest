@@ -81,11 +81,8 @@
         
         @media (max-width: 480px) {
             body {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                min-height: 100vh;
-                padding: 20px;
+                background-size: 70%;
+                /* 🔥 MAGIC LINE */
             }
         }
         
@@ -93,21 +90,18 @@
             .box {
                 width: 100%;
                 max-width: 100%;
-                min-height: 150px;
-                /* box ko real height */
-                padding: 30px 28px;
-                border-radius: 26px;
+                min-height: 240px;
+                /* 👈 yahan galti thi, 150 bahut kam */
+                padding: 36px 30px;
+                border-radius: 28px;
+                background: rgba(20, 20, 20, 0.9);
+                box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.15);
             }
-            #setup {
-                font-size: 22px;
-            }
-            #punchline {
-                font-size: 19px;
-            }
-            button {
-                width: 100%;
-                padding: 16px;
-                font-size: 16px;
+        }
+        
+        @media (max-width: 480px) {
+            body::before {
+                background: rgba(0, 0, 0, 0.45);
             }
         }
     </style>

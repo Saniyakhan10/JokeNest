@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JokeNest</title>
     <style>
         * {
@@ -80,24 +81,33 @@
         
         @media (max-width: 480px) {
             body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
                 padding: 20px;
             }
+        }
+        
+        @media (max-width: 480px) {
             .box {
                 width: 100%;
-                max-width: 420px;
-                padding: 28px;
-                border-radius: 22px;
+                max-width: 100%;
+                min-height: 150px;
+                /* box ko real height */
+                padding: 30px 28px;
+                border-radius: 26px;
             }
             #setup {
-                font-size: 20px;
+                font-size: 22px;
             }
             #punchline {
-                font-size: 17px;
+                font-size: 19px;
             }
             button {
                 width: 100%;
-                padding: 14px;
-                font-size: 15px;
+                padding: 16px;
+                font-size: 16px;
             }
         }
     </style>
